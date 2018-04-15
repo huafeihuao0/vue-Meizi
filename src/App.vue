@@ -1,42 +1,55 @@
 <template>
-<div>
- <v-header></v-header>
-  <loading :show="loadingShow"></loading>
-  <router-view></router-view>
-</div>
+  <div>
+    <Header></Header>
+    <Loading :show="loadingShow"></Loading>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-  import vMenu from './components/menu/menu.vue';
-  import vHeader from './components/header/header.vue';
-  import loading from './components/loading/loading.vue';
-  import { mapState } from 'vuex';
-  export default {
-    name: 'app',
-    components: {
-      vMenu,
-      vHeader,
-      loading
-    },
-    data() {
+  /**`
+   * 子组件
+   * */
+  import Menu from './components/menu/menu.vue';
+  import Header from './components/header/header.vue';
+  import Loading from './components/loading/loading.vue';
+
+  //vuex
+  import {mapState} from 'vuex';
+
+  export default //
+  {
+    name: 'app', //组件名
+    data()  //数据
+    {
       return {
         firstShow: true,
         show: false
       };
     },
-    computed: {
-      ...mapState([
-        'loadingShow'
-      ])
-    },
-    methods: {
-      isShow() {
-        this.show = !this.show;
+    components://支持的子组件
+      {
+        Menu,
+        Header,
+        Loading
       },
-      hideDetail() {
-        this.detailShow = false;
+    computed: //计算后的属性
+      {
+        ...mapState([
+          'loadingShow'
+        ])
+      },
+    methods://方法区
+      {
+        isShow()
+        {
+          this.show = !this.show;
+        },
+        hideDetail()
+        {
+          this.detailShow = false;
+        }
       }
-    }
   };
 </script>
 
@@ -49,9 +62,11 @@
     width: 100%;
     padding-top: 50px;
   }
+
   #app .show {
     transform: translateX(250px);
   }
+
   #app .page-cover {
     position: fixed;
     top: 0;
@@ -61,7 +76,8 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 7;
   }
-  #app .first{
+
+  #app .first {
     position: fixed;
     top: 0px;
     z-index: 20;
