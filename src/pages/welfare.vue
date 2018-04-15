@@ -15,9 +15,9 @@
 </template>
 
 <script>
-  import { objectDate } from '../../common/js/date';
-  import vImg from '../lazyloadimg/lazyimg.vue';
-  import vDetails from '../details/details.vue';
+  import { objectDate } from '../common/js/date';
+  import vImg from '../components/lazyloadImg/lazyimg.vue';
+  import vDetails from '../components/details/details.vue';
   export default {
     data() {
       return {

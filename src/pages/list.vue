@@ -8,7 +8,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import vCard from '../card/card.vue';
+  import vCard from '../components/card/card.vue';
   export default
   {
     name: 'v-list',

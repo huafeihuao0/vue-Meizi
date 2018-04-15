@@ -1,10 +1,5 @@
-// require.ensure 是 Webpack 的特殊语法，用来设置 组件到底路径
 /**
  * 【页面路由器】
- * 1.定义路由，每个路由应该映射一个组件
- * path : 浏览器的显示的路径
- * name ： 路由的名字
- * component : 路由的组件路径
  */
 const routers =//
   [
@@ -12,17 +7,17 @@ const routers =//
       ...urlToView('/', 'index', './App.vue'),
       children://
         [
-          urlToView('/welfare', 'welfare', './components/welfare/welfare.vue'), //
-          urlToView('/day', 'day', './components/recommend/recommend.vue'), //
+          urlToView('/welfare', 'welfare', './pages/welfare.vue'), //
+          urlToView('/day', 'day', './pages/recommend.vue'), //
           {
-            ...urlToView('/ios', 'ios', './components/lists/ios.vue'),
+            ...urlToView('/ios', 'ios', './pages/ios.vue'),
             meta: {requiresAuth: true}
           },
-          urlToView('/android', 'android', './components/lists/android.vue'),
-          urlToView('/web', 'web', './components/lists/web.vue'),
+          urlToView('/android', 'android', './pages/android.vue'),
+          urlToView('/web', 'web', './pages/web.vue'),
         ]
     },
-    urlToView('/wecome', 'wecome', './components/wecome/wecome.vue')
+    urlToView('/wecome', 'wecome', './pages/wecome.vue')
   ];
 
 /**

@@ -10,7 +10,7 @@
     </div>
 </template>
 <script>
-import {savaToLocal} from '../../common/js/store';
+import {savaToLocal} from '../common/js/store';
     export default {
         mounted() {
             setTimeout(() => {
@@ -23,5 +23,5 @@ import {savaToLocal} from '../../common/js/store';
     };
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
-    @import './wecome.styl';
+    @import 'wecome.styl';
 </style>

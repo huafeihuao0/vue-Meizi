@@ -10,7 +10,7 @@
 
 <script>
   import { swiper, swiperSlide } from 'vue-awesome-swiper';
-  import vDay from '../day/day.vue';
+  import vDay from '../components/day/day.vue';
   const TAB_NAME = ['今天', '昨天', '前天', '三天前', '四天前'];
   export default {
     name: 'v-recommend',
