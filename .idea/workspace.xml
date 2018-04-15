@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c7fada-3b39-4629-ab7c-1abcf3ccc24f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="$PROJECT_DIR$/src/routers.js" afterPath="$PROJECT_DIR$/src/routers.js" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
     </list>
     <ignored path="gankmeizi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +24,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routers.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/routers.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="650">
+              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#60#95#0" expanded="true" />
+                <element signature="e#138#177#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,6 +55,8 @@
       <find>brace</find>
       <find>loading</find>
       <find>loadingShow</find>
+      <find>main.js</find>
+      <find>routerApp</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -97,12 +102,12 @@
         <option value="$PROJECT_DIR$/src/components/recommend/recommend.vue" />
         <option value="$PROJECT_DIR$/src/components/welfare/welfare.vue" />
         <option value="$PROJECT_DIR$/src/components/menu/menu.vue" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/routers.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -150,6 +155,11 @@
             <path>
               <item name="gankmeizi" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-Meizi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gankmeizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-Meizi" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gankmeizi" type="b2602c69:ProjectViewProjectNode" />
@@ -259,12 +269,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483597832292</updated>
-      <workItem from="1523775508603" duration="6341000" />
+      <workItem from="1523775508603" duration="9219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6341000" />
+    <option name="totallyTimeSpent" value="9219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3000" height="2000" extended-state="6" />
@@ -401,13 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -571,14 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/welfare/welfare.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -643,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -677,19 +664,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
+    <entry file="file://$PROJECT_DIR$/src/routers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="4010">
+          <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#60#95#0" expanded="true" />
+            <element signature="e#138#177#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
